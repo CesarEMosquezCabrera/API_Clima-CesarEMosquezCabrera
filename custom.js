@@ -18,9 +18,9 @@ form.addEventListener('submit', (e) => {
 
 function callAPI(city, country){
     const apiId = '85cf402ace272c177bc1c01534d72ef5';
-    //const url = `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiId}`;
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiId}`;
     //const url = `api.openweathermap.org/data/2.5/forecast?q=${city},${country}&appid=${apiId}`;
-    const url = `api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&appid=85cf402ace272c177bc1c01534d72ef5`;
+    //const url = `api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&appid=85cf402ace272c177bc1c01534d72ef5`;
     
 
     fetch(url)
@@ -32,7 +32,7 @@ function callAPI(city, country){
                 showError('Ciudad no encontrada...');
             } else {
                 clearHTML();
-                //showWeather(dataJSON);
+                showWeather(dataJSON);
             }
             console.log(dataJSON);
         })
