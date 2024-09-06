@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 body{
     font-family: 'Montserrat', sans-serif;
+    display: flex;
 }
 .weather-content {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     max-width: 501px;
     text-align: center;
     padding: 20px 20px 50px;
-    margin: 10% auto 0;
+    margin: 5% auto 0;
     background-color: #546785;
     border-radius: 9px;
 }
@@ -36,6 +37,25 @@ body{
     margin: 2px;
     color: #fff;
 }
+
+.resultados{
+    margin-bottom: 8%;
+}
+.resultados p{
+    margin: 5px 0 5px;
+}
+.resultados h2{
+    font-size: 70px;
+    line-height: 70px;
+    margin: -10px 0 10px;
+    color: #fa0000;
+}
+.resultados h5{
+    font-size: 21px;
+    margin: 2px;
+    color: #000294;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -74,4 +94,22 @@ form input[type="submit"]:hover{
 .alert-message {
     margin: 24px 0 0;
     color: red!important;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.sectionDos{
+    margin: 80px 200px 0px 0px;
+}
+.cardW{
+    margin: 5px;
+    padding: 5px;
+    background: #14d4a5;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
